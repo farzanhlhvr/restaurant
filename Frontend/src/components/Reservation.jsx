@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();//So the pge don't get reloads
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/reservation/send",
+        "BACKEND_URL",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {

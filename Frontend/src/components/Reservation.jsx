@@ -50,7 +50,7 @@ const Reservation = () => {
           <div className="reservation_form_box">
             <h1>MAKE A RESERVATION</h1>
             <p>For Further Questions, Please Call</p>
-            <form>
+            <form onSubmit={handleReservation}>
               <div>
                 <input
                   type="text"
@@ -100,7 +100,7 @@ const Reservation = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-              <button type="submit" onClick={handleReservation}>
+              <button type="submit">
                 RESERVE NOW{" "}
                 <span>
                   <HiOutlineArrowNarrowRight />

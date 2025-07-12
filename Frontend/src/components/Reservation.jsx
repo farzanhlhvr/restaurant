@@ -55,12 +55,14 @@ const Reservation = () => {
                 <input
                   type="text"
                   placeholder="First Name"
+                  required
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
+                  required
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                 />
@@ -69,12 +71,14 @@ const Reservation = () => {
                 <input
                   type="date"
                   placeholder="Date"
+                  required
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
                 />
                 <input
                   type="time"
                   placeholder="Time"
+                  required
                   value={time}
                   onChange={(e) => setTime(e.target.value)}
                 />
@@ -83,6 +87,7 @@ const Reservation = () => {
                 <input
                   type="email"
                   placeholder="Email"
+                  required
                   className="email_tag"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -90,6 +95,7 @@ const Reservation = () => {
                 <input
                   type="number"
                   placeholder="Phone"
+                  required
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
